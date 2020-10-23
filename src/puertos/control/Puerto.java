@@ -17,7 +17,7 @@ public class Puerto {
 	private List<Barco> barcos;
 	
 	public Puerto() {
-		barcos = new ArrayList<Barco>();
+		barcos = new ArrayList<>();
 	}
 	
 	/**

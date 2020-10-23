@@ -26,7 +26,7 @@ import javax.swing.ButtonModel;
  * Interfaz gráfica sencilla que permite hacer algunas operaciones
  * con barcos en un puerto, principalmente para pruebas.
  * Esta ventana se generó con el WindowsBuilder (plugin de Eclipse).
- * @version 1.0
+ * @version 1.1
  */
 public class VentanaControlBarcos extends JFrame {
 	
@@ -70,28 +70,28 @@ public class VentanaControlBarcos extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		GridBagLayout gbl_contentPane = new GridBagLayout();
-		gbl_contentPane.columnWidths = new int[]{122, 107, 191, 0};
-		gbl_contentPane.rowHeights = new int[]{14, 20, 20, 20, 23, 23, 20, 23, 23, 2, 23, 0};
-		gbl_contentPane.columnWeights = new double[]{0.0, 0.0, 0.0, Double.MIN_VALUE};
-		gbl_contentPane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
-		contentPane.setLayout(gbl_contentPane);
+		GridBagLayout constraintscontentPane = new GridBagLayout();
+		constraintscontentPane.columnWidths = new int[]{122, 107, 191, 0};
+		constraintscontentPane.rowHeights = new int[]{14, 20, 20, 20, 23, 23, 20, 23, 23, 2, 23, 0};
+		constraintscontentPane.columnWeights = new double[]{0.0, 0.0, 0.0, Double.MIN_VALUE};
+		constraintscontentPane.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		contentPane.setLayout(constraintscontentPane);
 		
 		JLabel lblNuevoBarco = new JLabel("Nuevo Barco");
-		GridBagConstraints gbc_lblNuevoBarco = new GridBagConstraints();
-		gbc_lblNuevoBarco.anchor = GridBagConstraints.NORTH;
-		gbc_lblNuevoBarco.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNuevoBarco.gridx = 1;
-		gbc_lblNuevoBarco.gridy = 0;
-		contentPane.add(lblNuevoBarco, gbc_lblNuevoBarco);
+		GridBagConstraints constraintslblNuevoBarco = new GridBagConstraints();
+		constraintslblNuevoBarco.anchor = GridBagConstraints.NORTH;
+		constraintslblNuevoBarco.insets = new Insets(0, 0, 5, 5);
+		constraintslblNuevoBarco.gridx = 1;
+		constraintslblNuevoBarco.gridy = 0;
+		contentPane.add(lblNuevoBarco, constraintslblNuevoBarco);
 		
 		JLabel lblMatrcula = new JLabel("Matrícula:");
-		GridBagConstraints gbc_lblMatrcula = new GridBagConstraints();
-		gbc_lblMatrcula.anchor = GridBagConstraints.WEST;
-		gbc_lblMatrcula.insets = new Insets(0, 0, 5, 5);
-		gbc_lblMatrcula.gridx = 0;
-		gbc_lblMatrcula.gridy = 1;
-		contentPane.add(lblMatrcula, gbc_lblMatrcula);
+		GridBagConstraints constraintslblMatrcula = new GridBagConstraints();
+		constraintslblMatrcula.anchor = GridBagConstraints.WEST;
+		constraintslblMatrcula.insets = new Insets(0, 0, 5, 5);
+		constraintslblMatrcula.gridx = 0;
+		constraintslblMatrcula.gridy = 1;
+		contentPane.add(lblMatrcula, constraintslblMatrcula);
 		
 		JButton btnCrearBarco = new JButton("Crear Barco");
 		btnCrearBarco.addActionListener(new ActionListener() {
@@ -101,146 +101,146 @@ public class VentanaControlBarcos extends JFrame {
 		});
 		
 		campoMatricula = new JTextField();
-		GridBagConstraints gbc_campoMatricula = new GridBagConstraints();
-		gbc_campoMatricula.anchor = GridBagConstraints.NORTHWEST;
-		gbc_campoMatricula.insets = new Insets(0, 0, 5, 0);
-		gbc_campoMatricula.gridwidth = 2;
-		gbc_campoMatricula.gridx = 1;
-		gbc_campoMatricula.gridy = 1;
-		contentPane.add(campoMatricula, gbc_campoMatricula);
+		GridBagConstraints constraintscampoMatricula = new GridBagConstraints();
+		constraintscampoMatricula.anchor = GridBagConstraints.NORTHWEST;
+		constraintscampoMatricula.insets = new Insets(0, 0, 5, 0);
+		constraintscampoMatricula.gridwidth = 2;
+		constraintscampoMatricula.gridx = 1;
+		constraintscampoMatricula.gridy = 1;
+		contentPane.add(campoMatricula, constraintscampoMatricula);
 		campoMatricula.setColumns(10);
 		
 		JLabel lblNacionalidad = new JLabel("Nacionalidad:");
-		GridBagConstraints gbc_lblNacionalidad = new GridBagConstraints();
-		gbc_lblNacionalidad.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lblNacionalidad.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNacionalidad.gridx = 0;
-		gbc_lblNacionalidad.gridy = 2;
-		contentPane.add(lblNacionalidad, gbc_lblNacionalidad);
+		GridBagConstraints constraintslblNacionalidad = new GridBagConstraints();
+		constraintslblNacionalidad.fill = GridBagConstraints.HORIZONTAL;
+		constraintslblNacionalidad.insets = new Insets(0, 0, 5, 5);
+		constraintslblNacionalidad.gridx = 0;
+		constraintslblNacionalidad.gridy = 2;
+		contentPane.add(lblNacionalidad, constraintslblNacionalidad);
 		
 		campoNacionalidad = new JTextField();
-		GridBagConstraints gbc_campoNacionalidad = new GridBagConstraints();
-		gbc_campoNacionalidad.anchor = GridBagConstraints.NORTH;
-		gbc_campoNacionalidad.fill = GridBagConstraints.HORIZONTAL;
-		gbc_campoNacionalidad.insets = new Insets(0, 0, 5, 0);
-		gbc_campoNacionalidad.gridwidth = 2;
-		gbc_campoNacionalidad.gridx = 1;
-		gbc_campoNacionalidad.gridy = 2;
-		contentPane.add(campoNacionalidad, gbc_campoNacionalidad);
+		GridBagConstraints constraintscampoNacionalidad = new GridBagConstraints();
+		constraintscampoNacionalidad.anchor = GridBagConstraints.NORTH;
+		constraintscampoNacionalidad.fill = GridBagConstraints.HORIZONTAL;
+		constraintscampoNacionalidad.insets = new Insets(0, 0, 5, 0);
+		constraintscampoNacionalidad.gridwidth = 2;
+		constraintscampoNacionalidad.gridx = 1;
+		constraintscampoNacionalidad.gridy = 2;
+		contentPane.add(campoNacionalidad, constraintscampoNacionalidad);
 		campoNacionalidad.setColumns(10);
 		
 		JLabel lblVolumen = new JLabel("Volumen:");
-		GridBagConstraints gbc_lblVolumen = new GridBagConstraints();
-		gbc_lblVolumen.anchor = GridBagConstraints.WEST;
-		gbc_lblVolumen.insets = new Insets(0, 0, 5, 5);
-		gbc_lblVolumen.gridx = 0;
-		gbc_lblVolumen.gridy = 3;
-		contentPane.add(lblVolumen, gbc_lblVolumen);
+		GridBagConstraints constraintslblVolumen = new GridBagConstraints();
+		constraintslblVolumen.anchor = GridBagConstraints.WEST;
+		constraintslblVolumen.insets = new Insets(0, 0, 5, 5);
+		constraintslblVolumen.gridx = 0;
+		constraintslblVolumen.gridy = 3;
+		contentPane.add(lblVolumen, constraintslblVolumen);
 		
 		campoVolumen = new JTextField();
-		GridBagConstraints gbc_campoVolumen = new GridBagConstraints();
-		gbc_campoVolumen.anchor = GridBagConstraints.NORTHWEST;
-		gbc_campoVolumen.insets = new Insets(0, 0, 5, 5);
-		gbc_campoVolumen.gridx = 1;
-		gbc_campoVolumen.gridy = 3;
-		contentPane.add(campoVolumen, gbc_campoVolumen);
+		GridBagConstraints constraintscampoVolumen = new GridBagConstraints();
+		constraintscampoVolumen.anchor = GridBagConstraints.NORTHWEST;
+		constraintscampoVolumen.insets = new Insets(0, 0, 5, 5);
+		constraintscampoVolumen.gridx = 1;
+		constraintscampoVolumen.gridy = 3;
+		contentPane.add(campoVolumen, constraintscampoVolumen);
 		campoVolumen.setColumns(10);
 		
-		JLabel lblM = new JLabel("m3");
-		GridBagConstraints gbc_lblM = new GridBagConstraints();
-		gbc_lblM.anchor = GridBagConstraints.WEST;
-		gbc_lblM.insets = new Insets(0, 0, 5, 0);
-		gbc_lblM.gridx = 2;
-		gbc_lblM.gridy = 3;
-		contentPane.add(lblM, gbc_lblM);
+		JLabel lblMetrosCubicos = new JLabel("m3");
+		GridBagConstraints constraintslblMetros = new GridBagConstraints();
+		constraintslblMetros.anchor = GridBagConstraints.WEST;
+		constraintslblMetros.insets = new Insets(0, 0, 5, 0);
+		constraintslblMetros.gridx = 2;
+		constraintslblMetros.gridy = 3;
+		contentPane.add(lblMetrosCubicos, constraintslblMetros);
 		
 		JLabel lblTipo = new JLabel("Tipo:");
-		GridBagConstraints gbc_lblTipo = new GridBagConstraints();
-		gbc_lblTipo.anchor = GridBagConstraints.WEST;
-		gbc_lblTipo.insets = new Insets(0, 0, 5, 5);
-		gbc_lblTipo.gridx = 0;
-		gbc_lblTipo.gridy = 4;
-		contentPane.add(lblTipo, gbc_lblTipo);
+		GridBagConstraints constraintslblTipo = new GridBagConstraints();
+		constraintslblTipo.anchor = GridBagConstraints.WEST;
+		constraintslblTipo.insets = new Insets(0, 0, 5, 5);
+		constraintslblTipo.gridx = 0;
+		constraintslblTipo.gridy = 4;
+		contentPane.add(lblTipo, constraintslblTipo);
 		
 		JRadioButton opcionVelero = new JRadioButton("Velero");
 		opcionVelero.setActionCommand("velero");
 		opcionesTipoBarco.add(opcionVelero);
-		GridBagConstraints gbc_opcionVelero = new GridBagConstraints();
-		gbc_opcionVelero.anchor = GridBagConstraints.NORTH;
-		gbc_opcionVelero.fill = GridBagConstraints.HORIZONTAL;
-		gbc_opcionVelero.insets = new Insets(0, 0, 5, 5);
-		gbc_opcionVelero.gridx = 1;
-		gbc_opcionVelero.gridy = 4;
-		contentPane.add(opcionVelero, gbc_opcionVelero);
+		GridBagConstraints constraintsopcionVelero = new GridBagConstraints();
+		constraintsopcionVelero.anchor = GridBagConstraints.NORTH;
+		constraintsopcionVelero.fill = GridBagConstraints.HORIZONTAL;
+		constraintsopcionVelero.insets = new Insets(0, 0, 5, 5);
+		constraintsopcionVelero.gridx = 1;
+		constraintsopcionVelero.gridy = 4;
+		contentPane.add(opcionVelero, constraintsopcionVelero);
 		
 		JRadioButton opcionCarguero = new JRadioButton("Carguero");
 		opcionCarguero.setActionCommand("carguero");
 		opcionesTipoBarco.add(opcionCarguero);
-		GridBagConstraints gbc_opcionCarguero = new GridBagConstraints();
-		gbc_opcionCarguero.anchor = GridBagConstraints.NORTH;
-		gbc_opcionCarguero.fill = GridBagConstraints.HORIZONTAL;
-		gbc_opcionCarguero.insets = new Insets(0, 0, 5, 5);
-		gbc_opcionCarguero.gridx = 1;
-		gbc_opcionCarguero.gridy = 5;
-		contentPane.add(opcionCarguero, gbc_opcionCarguero);
+		GridBagConstraints constraintsopcionCarguero = new GridBagConstraints();
+		constraintsopcionCarguero.anchor = GridBagConstraints.NORTH;
+		constraintsopcionCarguero.fill = GridBagConstraints.HORIZONTAL;
+		constraintsopcionCarguero.insets = new Insets(0, 0, 5, 5);
+		constraintsopcionCarguero.gridx = 1;
+		constraintsopcionCarguero.gridy = 5;
+		contentPane.add(opcionCarguero, constraintsopcionCarguero);
 		
 		JLabel lblPasajeros = new JLabel("Pasajeros:");
-		GridBagConstraints gbc_lblPasajeros = new GridBagConstraints();
-		gbc_lblPasajeros.anchor = GridBagConstraints.SOUTHWEST;
-		gbc_lblPasajeros.insets = new Insets(0, 0, 5, 5);
-		gbc_lblPasajeros.gridx = 0;
-		gbc_lblPasajeros.gridy = 6;
-		contentPane.add(lblPasajeros, gbc_lblPasajeros);
+		GridBagConstraints constraintslblPasajeros = new GridBagConstraints();
+		constraintslblPasajeros.anchor = GridBagConstraints.SOUTHWEST;
+		constraintslblPasajeros.insets = new Insets(0, 0, 5, 5);
+		constraintslblPasajeros.gridx = 0;
+		constraintslblPasajeros.gridy = 6;
+		contentPane.add(lblPasajeros, constraintslblPasajeros);
 		
 		campoPasajeros = new JTextField();
-		GridBagConstraints gbc_campoPasajeros = new GridBagConstraints();
-		gbc_campoPasajeros.anchor = GridBagConstraints.NORTHWEST;
-		gbc_campoPasajeros.insets = new Insets(0, 0, 5, 5);
-		gbc_campoPasajeros.gridx = 1;
-		gbc_campoPasajeros.gridy = 6;
-		contentPane.add(campoPasajeros, gbc_campoPasajeros);
+		GridBagConstraints constraintscampoPasajeros = new GridBagConstraints();
+		constraintscampoPasajeros.anchor = GridBagConstraints.NORTHWEST;
+		constraintscampoPasajeros.insets = new Insets(0, 0, 5, 5);
+		constraintscampoPasajeros.gridx = 1;
+		constraintscampoPasajeros.gridy = 6;
+		contentPane.add(campoPasajeros, constraintscampoPasajeros);
 		campoPasajeros.setColumns(10);
 		
 		JLabel lblLlevaLquidos = new JLabel("Lleva líquidos:");
-		GridBagConstraints gbc_lblLlevaLquidos = new GridBagConstraints();
-		gbc_lblLlevaLquidos.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lblLlevaLquidos.insets = new Insets(0, 0, 5, 5);
-		gbc_lblLlevaLquidos.gridx = 0;
-		gbc_lblLlevaLquidos.gridy = 7;
-		contentPane.add(lblLlevaLquidos, gbc_lblLlevaLquidos);
+		GridBagConstraints constraintslblLlevaLquidos = new GridBagConstraints();
+		constraintslblLlevaLquidos.fill = GridBagConstraints.HORIZONTAL;
+		constraintslblLlevaLquidos.insets = new Insets(0, 0, 5, 5);
+		constraintslblLlevaLquidos.gridx = 0;
+		constraintslblLlevaLquidos.gridy = 7;
+		contentPane.add(lblLlevaLquidos, constraintslblLlevaLquidos);
 		
 		checkLiquidos = new JCheckBox("Sí");
-		GridBagConstraints gbc_checkLiquidos = new GridBagConstraints();
-		gbc_checkLiquidos.anchor = GridBagConstraints.NORTH;
-		gbc_checkLiquidos.fill = GridBagConstraints.HORIZONTAL;
-		gbc_checkLiquidos.insets = new Insets(0, 0, 5, 5);
-		gbc_checkLiquidos.gridx = 1;
-		gbc_checkLiquidos.gridy = 7;
-		contentPane.add(checkLiquidos, gbc_checkLiquidos);
-		GridBagConstraints gbc_btnCrearBarco = new GridBagConstraints();
-		gbc_btnCrearBarco.anchor = GridBagConstraints.NORTHWEST;
-		gbc_btnCrearBarco.insets = new Insets(0, 0, 5, 5);
-		gbc_btnCrearBarco.gridx = 1;
-		gbc_btnCrearBarco.gridy = 8;
-		contentPane.add(btnCrearBarco, gbc_btnCrearBarco);
+		GridBagConstraints constraintscheckLiquidos = new GridBagConstraints();
+		constraintscheckLiquidos.anchor = GridBagConstraints.NORTH;
+		constraintscheckLiquidos.fill = GridBagConstraints.HORIZONTAL;
+		constraintscheckLiquidos.insets = new Insets(0, 0, 5, 5);
+		constraintscheckLiquidos.gridx = 1;
+		constraintscheckLiquidos.gridy = 7;
+		contentPane.add(checkLiquidos, constraintscheckLiquidos);
+		GridBagConstraints constraintsbtnCrearBarco = new GridBagConstraints();
+		constraintsbtnCrearBarco.anchor = GridBagConstraints.NORTHWEST;
+		constraintsbtnCrearBarco.insets = new Insets(0, 0, 5, 5);
+		constraintsbtnCrearBarco.gridx = 1;
+		constraintsbtnCrearBarco.gridy = 8;
+		contentPane.add(btnCrearBarco, constraintsbtnCrearBarco);
 		
 		JSeparator separator = new JSeparator();
-		GridBagConstraints gbc_separator = new GridBagConstraints();
-		gbc_separator.anchor = GridBagConstraints.NORTH;
-		gbc_separator.fill = GridBagConstraints.HORIZONTAL;
-		gbc_separator.insets = new Insets(0, 0, 5, 0);
-		gbc_separator.gridwidth = 3;
-		gbc_separator.gridx = 0;
-		gbc_separator.gridy = 9;
-		contentPane.add(separator, gbc_separator);
+		GridBagConstraints constraintsseparator = new GridBagConstraints();
+		constraintsseparator.anchor = GridBagConstraints.NORTH;
+		constraintsseparator.fill = GridBagConstraints.HORIZONTAL;
+		constraintsseparator.insets = new Insets(0, 0, 5, 0);
+		constraintsseparator.gridwidth = 3;
+		constraintsseparator.gridx = 0;
+		constraintsseparator.gridy = 9;
+		contentPane.add(separator, constraintsseparator);
 		
 		JLabel lblCapacidadTotal = new JLabel("Capacidad total:");
-		GridBagConstraints gbc_lblCapacidadTotal = new GridBagConstraints();
-		gbc_lblCapacidadTotal.fill = GridBagConstraints.HORIZONTAL;
-		gbc_lblCapacidadTotal.insets = new Insets(0, 0, 0, 5);
-		gbc_lblCapacidadTotal.gridx = 0;
-		gbc_lblCapacidadTotal.gridy = 10;
-		contentPane.add(lblCapacidadTotal, gbc_lblCapacidadTotal);
+		GridBagConstraints constraintsLblCapacidadTotal = new GridBagConstraints();
+		constraintsLblCapacidadTotal.fill = GridBagConstraints.HORIZONTAL;
+		constraintsLblCapacidadTotal.insets = new Insets(0, 0, 0, 5);
+		constraintsLblCapacidadTotal.gridx = 0;
+		constraintsLblCapacidadTotal.gridy = 10;
+		contentPane.add(lblCapacidadTotal, constraintsLblCapacidadTotal);
 		
 		JButton btnCalcularCapacidad = new JButton("Calcular Capacidad");
 		btnCalcularCapacidad.addActionListener(new ActionListener() {
@@ -251,18 +251,18 @@ public class VentanaControlBarcos extends JFrame {
 		
 		campoCapacidad = new JTextField();
 		campoCapacidad.setEditable(false);
-		GridBagConstraints gbc_campoCapacidad = new GridBagConstraints();
-		gbc_campoCapacidad.anchor = GridBagConstraints.WEST;
-		gbc_campoCapacidad.insets = new Insets(0, 0, 0, 5);
-		gbc_campoCapacidad.gridx = 1;
-		gbc_campoCapacidad.gridy = 10;
-		contentPane.add(campoCapacidad, gbc_campoCapacidad);
+		GridBagConstraints constraintsCampoCapacidad = new GridBagConstraints();
+		constraintsCampoCapacidad.anchor = GridBagConstraints.WEST;
+		constraintsCampoCapacidad.insets = new Insets(0, 0, 0, 5);
+		constraintsCampoCapacidad.gridx = 1;
+		constraintsCampoCapacidad.gridy = 10;
+		contentPane.add(campoCapacidad, constraintsCampoCapacidad);
 		campoCapacidad.setColumns(10);
-		GridBagConstraints gbc_btnCalcularCapacidad = new GridBagConstraints();
-		gbc_btnCalcularCapacidad.anchor = GridBagConstraints.NORTHWEST;
-		gbc_btnCalcularCapacidad.gridx = 2;
-		gbc_btnCalcularCapacidad.gridy = 10;
-		contentPane.add(btnCalcularCapacidad, gbc_btnCalcularCapacidad);
+		GridBagConstraints constraintsBtnCalcularCapacidad = new GridBagConstraints();
+		constraintsBtnCalcularCapacidad.anchor = GridBagConstraints.NORTHWEST;
+		constraintsBtnCalcularCapacidad.gridx = 2;
+		constraintsBtnCalcularCapacidad.gridy = 10;
+		contentPane.add(btnCalcularCapacidad, constraintsBtnCalcularCapacidad);
 	}
 	
 	/**

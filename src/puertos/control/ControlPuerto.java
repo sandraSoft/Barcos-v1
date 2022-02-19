@@ -12,11 +12,11 @@ import puertos.entidades.Velero;
  * y tiene la principales funciones del programa (es el control).
  * @version 2.0
  */
-public class ControlBarco {
+public class ControlPuerto {
 
 	private List<Barco> barcos;
 	
-	public ControlBarco() {
+	public ControlPuerto() {
 		barcos = new ArrayList<>();
 	}
 	

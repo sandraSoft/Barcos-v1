@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import puertos.control.ControlBarco;
+import puertos.control.ControlPuerto;
 
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -30,7 +30,7 @@ import javax.swing.ButtonModel;
  */
 public class VentanaControlBarcos extends JFrame {
 	
-	private ControlBarco puerto;
+	private ControlPuerto puerto;
 
 	private JPanel contentPane;
 	private JTextField campoNacionalidad;
@@ -62,7 +62,7 @@ public class VentanaControlBarcos extends JFrame {
 	 */
 	public VentanaControlBarcos() {
 		
-		puerto = new ControlBarco();
+		puerto = new ControlPuerto();
 		
 		setTitle("Control Barcos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -10,6 +10,7 @@ import puertos.entidades.Velero;
 /**
  * Clase donde se registran los barcos que llegan al puerto,
  * y tiene la principales funciones del programa (es el control).
+ * 
  * @version 2.0
  */
 public class ControlPuerto {
